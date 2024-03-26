@@ -1,3 +1,7 @@
+ul{
+    list-style-type: none;
+}
+
 .button {
     color: #FAF4EA;;
     background-color: #819B57; 
@@ -8,4 +12,18 @@
 .button:hover {
     background-color: transparent;
     color: #465929;
+}
+
+.link{
+    color: #FAF4EA;
+}
+
+.link:hover {
+    color: #819B57;
+}
+.hero-title{
+    color: #FAF4EA;
+}
+.hero-title .accent{
+    color: #819B57;
 }
