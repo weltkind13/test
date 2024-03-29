@@ -1,3 +1,39 @@
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 300;
+     src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+ }
+
+ 
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+ 
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 600;
+     src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 900;
+     src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+    
+ }
+ 
  :root {
     --color-primary-dark: #31261A;
     --color-primary-light: #FAF4EA;
@@ -11,6 +47,10 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+}
+
+address {
+    font-style: normal;
 }
 
 ul {
@@ -75,8 +115,38 @@ ul {
  .tradition-text .uppercase {
     text-transform: uppercase;
  }
+/* Chefs section */
 
  .chef-title{
     font-size: 40px;
     font-weight: 600;
  }
+
+ /* formats */
+
+ .format-title {
+    font-size: 24px;
+    font-weight: 600;
+ }
+
+ .format-text   {
+    font-size: 14px;
+    font-weight: 300;
+ }
+ /* Adress link */
+ .adress-link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+ }
+
+  .adress-link:hover {
+      color: var(--color-brand-light);
+      font-size: 16px;
+      font-weight: 300;
+  }
+
+  .address-copyrigh {
+    font-size: 14px;
+  }
