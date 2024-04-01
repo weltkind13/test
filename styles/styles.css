@@ -159,7 +159,7 @@ ul {
 }
 
 .tradition-content{
-    maxw: 710px;
+    max-width: 710px;
 }
  .tradition-text .brand {
      color: var(--color-brand-light);
