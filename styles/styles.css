@@ -72,12 +72,15 @@ address {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .section{
    padding: 48px 0; 
 }
 .container{
+    
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
@@ -117,12 +120,19 @@ ul {
 }
 .hero-title .accent {
     color: var(--color-brand-light);
-    } 
-
-.advantages-list {
-    color: #FAF4EA;
+    }
+     /*Advantages section  */
+.advantages-section {
+    padding: 16px 0;
     background-color: var(--color-brand-light);
 }
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+    }
 .advantages-item{
     font-size: 20px;
     font-weight: 300;
@@ -137,23 +147,40 @@ ul {
 }
 
 /* tradition-section */
+
 .tradition {
     padding-top: 96px;
+}
+
+.tradition-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.tradition-content{
+    maxw: 710px;
 }
  .tradition-text .brand {
      color: var(--color-brand-light);
      font-weight: 600;
  }
+ 
  .tradition-text .uppercase {
     text-transform: uppercase;
  }
+ 
  .tradition-title{
     margin-bottom: 42px;
  }
-/* Chefs section */
+
+
+ /* Chefs section */
+
 .chefs-title{
     margin-bottom: 80px;
 }
+
  .chef-title{
     margin-bottom: 16px;
     font-size: 40px;
@@ -161,10 +188,25 @@ ul {
     }
 
  /* formats */
+ .formats-item{
+    flex-basis: calc((100% - 40px) / 3);
+ }
+ .format-card{
+    min-height: 100%;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 24px;
+ }
+ .formats-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .formats-title
 {
     margin-bottom: 80px;
 }
+
  .format-title {
     font-size: 24px;
     font-weight: 600;
@@ -175,10 +217,13 @@ ul {
     font-weight: 300;
  }
  /* contact section */
+
  .contact title{
     margin-bottom: 16px;
  }
+
  /* Adress link */
+
  .adress-link {
     color: var(--color-primary-light);
     font-size: 16px;
@@ -199,4 +244,28 @@ ul {
   .hero-section {
     padding: 272px 0;
   }
-  
+  /* HEader */
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+    .header-navigation {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  .header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+    
+  }
+   
+  .header {
+            background-color: black;
+        }
