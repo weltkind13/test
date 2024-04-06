@@ -208,6 +208,7 @@ ul {
     max-width: 710px;
 }
  .tradition-text .brand {
+
      color: var(--color-brand-normal);
      font-weight: 600;
  }
@@ -279,6 +280,28 @@ ul {
     font-size: 14px;
     font-weight: 300;
  }
+
+ /* Carousel */
+
+ .carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: var(--color-primary-dark);
+    background: transparent;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+ }
+
+ .carousel-button:hover{
+    background: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+ }
+
+
  /* contact section */
 
  .contact-title{
@@ -286,6 +309,13 @@ ul {
  }
 
  /* Adress link */
+ .adress-social{
+    fill: var(--color-primary-light);
+ }
+
+  .adress-social:hover {
+      fill: var(--color-brand-dark);
+  }
 
  .adress-link {
     color: var(--color-primary-light);
