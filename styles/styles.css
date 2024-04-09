@@ -55,7 +55,13 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
 }
 
-* {
+a {
+    display: inline-block;
+}
+
+*,
+ *::after,
+ *::before {
     box-sizing: border-box;
 }
 
@@ -224,6 +230,7 @@ ul {
 
  /* Chefs section */
 
+
 .chefs-title{
     max-width: 520px;
     margin: 0 auto 80px;
@@ -235,6 +242,30 @@ ul {
     border: 2px solid var(--color-brand-light);
     content:'';
 }
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child{
+    margin-bottom: 0;
+}
+
+.chefs-list {   
+    display:flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+    
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
 .chef-photo{
     border-radius: 4px 4px 4px 200px;
     box-shadow: -16px 16px 0 0 var(--color-primary-light),
@@ -247,6 +278,11 @@ ul {
     }
 
  /* formats */
+ .formats-container{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+ }
  .formats-item{
     flex-basis: calc((100% - 40px) / 3);
  }
@@ -264,7 +300,8 @@ ul {
  .formats-list {
     display: flex;
     flex-wrap: wrap;
-}
+    gap: 20px;
+    }
 .formats-title
 {
     margin-bottom: 80px;
@@ -286,6 +323,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -302,12 +340,51 @@ ul {
 
 
  /* contact section */
+.contact-container{
+    display: flex;
+    gap: 32px;
+}
+
+.contact{
+    padding-bottom: 96px;
+}
 
  .contact-title{
     margin-bottom: 16px;
+    
  }
 
- /* Adress link */
+ .contact-map{
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+ }
+
+ /* footer */
+ 
+ .footer-container{
+    display: flex;
+    gap: 20px;
+ }
+
+ .footer-nav,
+ .footer-address {
+    display: flex;
+    gap: 20px;
+    flex-basis:  50%;
+ }
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+
+.footer-logo, 
+.footer-menu{
+    flex-grow: 1;
+}
+
+
  .adress-social{
     fill: var(--color-primary-light);
  }
@@ -329,11 +406,13 @@ ul {
       font-weight: 300;
   }
 
-  .address-copyrigh {
+  .address-copyright {
+    color: #A18268;
     font-size: 14px;
   }
 
   .footer {
+    padding: 32px 0;
     background-color: var(--color-primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
