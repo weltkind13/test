@@ -38,7 +38,7 @@
     --color-brand-normal: #819B57;
     --color-brand-dark: #465929;
     --color-brand-light: #CFCFBC;
-    --color-secondary-dark: #A18268
+    --color-secondary-dark: #A18268;
  }
 
 /* base */
@@ -134,7 +134,7 @@ ul {
     border-radius: 8px ;
     cursor: pointer;
     font-weight: 600;
-        }
+     }
 
 .button:hover {
     background-color: transparent;
@@ -384,6 +384,7 @@ ul {
  }
 
  .contact-map{
+    height: auto;
     flex-shrink: 0;
     border: none;
     border-radius: 16px;
@@ -492,8 +493,10 @@ ul {
     max-height: 880px;
     width: 100%;
     max-width: 880px;
+    padding: 128px;
     border-radius: 32px;
     background-color: var(--color-primary-light);
+    overflow-y: auto;
 }
 
 .backdrop.is-hidden {
@@ -508,8 +511,55 @@ ul {
     right: 40px;
 }
 
+/* FORM */
+.form-input  {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    background-color: transparent;
+}
 
+.form-label {
+    display: block;
+}
 
+.form-field{
+    margin-bottom: 32px;
+}
 
+.form-input:focus {
+    border-color: var(--color-brand-normal);
+    outline: none;
+}
 
+.form-input::placeholder {
+    color: var(--color-secondary-dark);
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+    color: var(--color-primary-dark);
+}
    
+.form-button {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.form-terms {
+    max-width: 220px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-terms-link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
+}
