@@ -96,6 +96,14 @@ ul {
     padding: 0 24px;
 }
   /* HEader */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
+}
+
   .header-container {
       display: flex;
       align-items: center;
@@ -136,17 +144,19 @@ ul {
 .link{
     color: #FAF4EA;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .link:hover {
     color: var(--color-brand-normal);
-    font-weight: 600;
 }
 /* HERO SECTION */
 
 .hero-section {
       padding: 272px 0;
-      background-image: url(../images/hero-bgrd.jpg);
+      background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%,
+       rgba(18, 18, 17, 0) 90.36%) ,
+        url(../images/hero-bgrd.jpg);
       background-repeat: no-repeat;
       background-position: center top;
       background-size: cover; 
@@ -305,7 +315,13 @@ ul {
     border: 1px solid black;
     border-radius: 16px;
     padding: 24px;
+    transition: transform 0.3s;
  }
+
+ .format-card:hover {
+    transform: scale(1.05); 
+ }
+
  .formats-list {
     display: flex;
     flex-wrap: wrap;
@@ -340,6 +356,10 @@ ul {
     background: transparent;
     border: 1px solid var(--color-primary-dark);
     cursor: pointer;
+ }
+
+ .carousel-button.next {
+    transform: rotate(180deg);
  }
 
  .carousel-button:hover{
@@ -461,12 +481,17 @@ ul {
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
+    transition: opacity .3s, visibility .3s;
 }
 
 .modal {
+    /* modal window */
     position: relative;
-    height: 880px;
-    width: 880px;
+    height: 100%;
+    max-height: 880px;
+    width: 100%;
+    max-width: 880px;
     border-radius: 32px;
     background-color: var(--color-primary-light);
 }
