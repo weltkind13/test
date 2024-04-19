@@ -317,7 +317,7 @@
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
 
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">
               Ім’я
@@ -328,6 +328,8 @@
               id="user-name"
               name="user-name"
               placeholder="Ім’я"
+              required
+              minlength="2"
             />
           </div>
 
@@ -341,6 +343,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              required
+              minlength="2"
             />
           </div>
 
@@ -354,6 +358,8 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
+              minlength="2"
             />
           </div>
 
