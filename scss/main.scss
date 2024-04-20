@@ -1,26 +1,10 @@
-.section {
-    padding: 48px 0;
-}
+
 
 .container {
     width: 100%;
     max-width: 1288px;
     margin: 0 auto;
     padding: 0 24px;
-}
-
-.section-title {
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 1.3;
-}
-
-.section-title.centered {
-    text-align: center;
-}
-
-.section-title .accent {
-    color: var(--color-brand-dark);
 }
 
 @import './utils/fonts';
@@ -32,19 +16,20 @@
 
 @import './components/button';
 @import './components/links' ;
-@import './components/header';
-@import './components/hero-section';
-@import './components/advantage-section';
-@import './components/tradition-section';
-@import './components/chefs-section';
-@import './components/formats-section';
-
 @import './components/caurousel';
-
-@import './components/contact-section';
-@import './components/footer';
 @import './components/modal-window';
 @import './components/form';
+
+@import './layouts/advantage-section';
+@import './layouts/chefs-section';
+@import './layouts/contact-section';
+@import './layouts/footer';
+@import './layouts/formats-section';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/tradition-section';
+@import './layouts/section';
+@import './utils/texts';
 
 
 @import './utils/mixins';
