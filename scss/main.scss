@@ -1,10 +1,8 @@
-
-
 .container {
-    width: 100%;
-    max-width: 1288px;
-    margin: 0 auto;
-    padding: 0 24px;
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 @import './utils/fonts';
@@ -15,10 +13,13 @@
 @import './utils/utils';
 
 @import './components/button';
-@import './components/links' ;
+@import './components/links';
 @import './components/caurousel';
 @import './components/modal-window';
-@import './components/form';
+@import './components/form-terms';
+@import './components/chef-card';
+@import './components/formats-card';
+@import './components/input';
 
 @import './layouts/advantage-section';
 @import './layouts/chefs-section';
@@ -29,9 +30,6 @@
 @import './layouts/hero-section';
 @import './layouts/tradition-section';
 @import './layouts/section';
+
 @import './utils/texts';
-
-
 @import './utils/mixins';
-
-
